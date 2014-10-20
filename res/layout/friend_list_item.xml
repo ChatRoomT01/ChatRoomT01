@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/background"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/iv_friend_list_item_touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gerentouxiang" />
+
+    <TextView
+        android:id="@+id/tv_friend_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/black"
+        android:text="TextView" />
+
+</LinearLayout>

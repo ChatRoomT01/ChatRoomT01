@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background">"
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        
+    </android.support.v4.view.ViewPager>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/background_top"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding">
+        
+        <Button 
+            android:id="@+id/btn_main_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_btn_selector"
+            android:text="好友"
+            android:textSize="@dimen/text_size_bottom"
+            android:layout_marginRight="@dimen/padding"/>
+        <Button 
+            android:id="@+id/btn_main_groupTalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_btn_selector"
+            android:text="群聊"
+            android:textSize="@dimen/text_size_bottom"
+            android:layout_marginRight="@dimen/padding"/>
+        <Button 
+            android:id="@+id/btn_main_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_btn_selector"
+            android:text="话题"
+            android:textSize="@dimen/text_size_bottom"
+            android:layout_marginRight="@dimen/padding"/>
+        <Button 
+            android:id="@+id/btn_main_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/title_btn_selector"
+            android:text="更多"
+            android:textSize="@dimen/text_size_bottom"
+            />
+    </LinearLayout>
+
+</LinearLayout>

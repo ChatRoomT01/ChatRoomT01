@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_top"
+        android:padding="@dimen/padding" >
+
+        <TextView
+            android:id="@+id/tv_groupChat_roomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="roomName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/background_top"
+        android:padding="@dimen/padding" >
+
+        <Button
+            android:id="@+id/btn_groupChat_send"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:background="@drawable/btn_send_message_selector"/>
+
+        <EditText
+            android:id="@+id/et_groupChat_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_toLeftOf="@+id/btn_groupChat_send"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView_groupChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_above="@+id/relativeLayout_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_groupChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
